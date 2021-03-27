@@ -1,0 +1,59 @@
+.product__description{
+    &__container{
+        background-color: white;
+        padding: 20px;
+        height: auto;
+        max-width: 780px;
+        color: grey;
+        display: flex;
+    }
+
+    &__details{
+        width: 70%;
+    }
+
+    &__price{
+        width: 30%;
+
+        &__name{
+            font-weight: bold;
+            color: black;
+            font-size: 24px;
+            padding-top: 12px;
+        }
+
+        &__number{
+            color: black;
+            font-size: 38px;
+            padding: 12px 0px 32px;
+        }
+
+        &__buy{
+            button{
+                height: 40px;
+                background-color: #2968c8;
+                color: white;
+                width: 100%; 
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__img{
+        width: 440px;
+        height: 440px;
+        margin-bottom: 24px;
+    }
+
+    &__title{
+        font-size: 24px;
+        padding-bottom: 12px;
+    }
+
+    &__info{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+}

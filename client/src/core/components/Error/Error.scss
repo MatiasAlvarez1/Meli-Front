@@ -1,0 +1,31 @@
+.error{
+    &__container{
+        max-width: 820px;
+        width: 820px;
+        margin-top: 24px;
+        background-color: white;
+        height: 200px;
+
+        &__image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top:30px;
+
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &__message{
+            text-align: center;
+        }
+
+        
+    }
+
+    &__message{
+        color: grey;
+    }
+}

@@ -1,0 +1,26 @@
+.breadcrumb{
+    &__container{
+        display: flex;
+        color: grey;
+        padding: 16px 0px;
+        max-width: 820px;
+        width: 820px;
+        margin: auto;
+        font-size: 14px;
+    }
+
+    &__crumb{
+        padding: 0px 8px;
+    }
+
+    &__name{
+        cursor: pointer;
+        &:hover{
+            color: black;
+        }    
+    }
+
+    &__info{
+        display: flex;
+    }
+}

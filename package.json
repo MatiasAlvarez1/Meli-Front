@@ -1,0 +1,82 @@
+{
+  "name": "meli-front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatiasAlvarez1/Meli-Front.git"
+  },
+  "author": "Matias Alvarez",
+  "license": "ISC",
+  "scripts": {
+    "dev": "NODE_ENV=development run-p -l dev:react dev:node ",
+    "production": "NODE_ENV=production run-p -l build:client build:server start:node",
+    "babel": "./node_modules/.bin/babel",
+    "babel-node": "./node_modules/.bin/babel-node",
+    "dev:react": "cd client && react-scripts start",
+    "dev:node": "NODE_ENV=development babel-node ./server/index.js",
+    "start:node": "babel-node ./server/index.js",
+    "build:client": "cd client && react-scripts build",
+    "build:server": "babel ./server --out-dir ./server/dist",
+    "test": "cd client && react-scripts test",
+    "eject": "cd client && react-scripts eject",
+    "pre-commit": "npm test",
+    "pre-push": "npm test"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "cors": "^2.8.5",
+    "cross-fetch": "^3.1.2",
+    "express": "~4.17.1",
+    "express-promise-router": "^4.1.0",
+    "i": "^0.3.6",
+    "node-sass": "^5.0.0",
+    "npm": "^7.7.0",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^6.15.5",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "tslint": "^6.1.3",
+    "web-vitals": "^1.1.1"
+  },
+  "devDependencies": {
+    "@babel/node": "^7.13.13",
+    "husky": "^5.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/MatiasAlvarez1/Meli-Front/issues"
+  },
+  "homepage": "https://github.com/MatiasAlvarez1/Meli-Front#readme"
+}

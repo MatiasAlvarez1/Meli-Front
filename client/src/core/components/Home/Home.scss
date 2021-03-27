@@ -1,0 +1,32 @@
+.home{
+    &__container{
+        max-width: 820px;
+        width: 820px;
+        margin-top: 24px;
+        background-color: white;
+        height: 200px;
+
+        &__image{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 48px;
+
+            img{
+                width: 164px;
+                height: 34px;
+            }
+        }
+
+        &__message{
+            text-align: center;
+            margin-top: 24px;
+        }
+
+        
+    }
+
+    &__message{
+        color: grey;
+    }
+}

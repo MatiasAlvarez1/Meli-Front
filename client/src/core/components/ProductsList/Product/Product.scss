@@ -1,0 +1,36 @@
+.product{
+    &__container{
+        padding:12px;
+        background-color:white;
+        display: flex;
+        color: #333;
+        align-items: center;
+        border-bottom: 1px solid #EDEDED;
+        height: 160px;
+        cursor: pointer;
+    }
+
+    &__image{
+        width: 120px;
+        height: 120px;
+    }
+
+    &__details{
+        display: inline;
+        padding-left: 24px;
+    }
+
+    &__price{
+        font-size: 24px;
+    }
+
+    &__title{
+        font-size: 14px;
+    }
+
+    &__city{
+        font-size: 14px;
+        margin-left: auto;
+        padding-right: 24px;
+    }
+}

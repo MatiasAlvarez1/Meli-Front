@@ -1,0 +1,50 @@
+.app{
+    &__content{
+        display: flex;
+        background-color: #EDEDED;
+        justify-content: center;
+    }
+
+    &__header{
+        &__content{
+            box-sizing: border-box;
+            padding: 9px;
+            background-color: #FFF059;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__breadcrumb{
+        &__content{
+            display: flex;
+            background-color: #EDEDED;
+            margin: auto;
+        }
+    }
+}
+
+.header{
+    &__container{
+        box-sizing: border-box;
+        width: 820px;
+        max-width: 820px;
+        display: flex;
+        justify-content: center;
+
+        &__logo{
+            width: 20%;
+        }
+
+        &__searchbox{
+            width: 80%;
+        }
+    }
+
+    &__logo{
+        background-image: url(https://http2.mlstatic.com/frontend-assets/ui-navigation/5.14.3/mercadolibre/logo__large_plus.png);
+        height: 34px;
+        top: 11px;
+        background-repeat: no-repeat;
+    }
+}

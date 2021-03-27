@@ -1,0 +1,19 @@
+body{
+  margin: 0px;
+  height: 100%;
+  background-color: #EDEDED;
+  padding-bottom: 12px;
+  font-family: "Proxima Nova" ,sans-serif;
+}
+
+button{
+  &:focus{
+    outline:none !important;
+  }
+}
+
+input{
+  &:focus{
+    outline:none !important;
+  }
+}
